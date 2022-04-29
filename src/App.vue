@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
@@ -16,3 +16,8 @@ export default {
   }),
 };
 </script>
+<style >
+.v-card__subtitle, .v-card__text {
+    line-height: unset !important;
+}
+</style>
