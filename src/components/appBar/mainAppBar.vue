@@ -40,18 +40,21 @@
         cols="auto"
       >
         <NomalText
+          v-show="!$vuetify.breakpoint.mobile"
           class="pr-13"
           text-value="AboutMe"
           font-size="24"
           style="color: #727070"
         />
         <NomalText
+          v-show="!$vuetify.breakpoint.mobile"
           class="pr-13"
           text-value="Skills"
           font-size="24"
           style="color: #727070"
         />
         <NomalText
+          v-show="!$vuetify.breakpoint.mobile"
           text-value="Projects"
           font-size="24"
           style="color: #727070"
