@@ -41,23 +41,25 @@
       >
         <NomalText
           v-show="!$vuetify.breakpoint.mobile"
-          class="pr-13"
+          :class="{greyColorText: aboutMeToggle===false, blackColorText: aboutMeToggle===true}"
           text-value="AboutMe"
           font-size="24"
-          style="color: #727070"
+          @click.native="clickAboutMe"
         />
         <NomalText
           v-show="!$vuetify.breakpoint.mobile"
-          class="pr-13"
+          :class="{greyColorText: skillsToggle===false, blackColorText: skillsToggle===true}"
           text-value="Skills"
           font-size="24"
           style="color: #727070"
+          @click.native="clickSkills"
         />
         <NomalText
           v-show="!$vuetify.breakpoint.mobile"
           text-value="Projects"
           font-size="24"
-          style="color: #727070"
+          :class="{greyColorText: projectsToggle===false, blackColorText: projectsToggle===true}"
+          @click.native="clickProjects"
         />
       </v-col>
     </v-row>
@@ -72,9 +74,42 @@ export default {
   components: {
     NomalText,
     BoldText
+  },
+  props: {
+    aboutMeToggle: {
+      type: Boolean,
+      default: null
+    },
+    skillsToggle: {
+      type: Boolean,
+      default: null
+    },
+    projectsToggle: {
+      type: Boolean,
+      default: null
+    },
+  },
+  methods: {
+    clickAboutMe() {
+      this.$emit('click-about-me')
+    },
+    clickSkills() {
+      this.$emit('click-skills')
+    },
+    clickProjects() {
+      this.$emit('click-projects')
+    }
   }
 };
 </script>
 
-<style>
+<style scoped>
+.greyColorText {
+  color: #727070 !important;
+  padding-right: 52px !important;
+}
+.blackColorText {
+  color: black !important;
+  padding-right: 52px !important;
+}
 </style>
