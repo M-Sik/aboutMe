@@ -28,14 +28,15 @@
             id="skillsSection"
             v-animate-css.click="skillsAnimation"
           />
+          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
+          <Projects
+            id="projectsSection"
+            v-animate-css.hover="projectsAnimation"
+          />
         </v-col>
       </v-row>
       <ScrollUpBtn v-show="scrollUpBtnToggle" />
     </v-main>
-    <v-divider
-      id="test3"
-      style="border: solid 1px #6D6A6A; margin: 0px 160px;"
-    />
   </v-app>
 </template>
 
@@ -45,6 +46,7 @@ import Profile from '@/components/profile/profile.vue'
 import AboutMe from '@/components/aboutMe/aboutMe.vue'
 import Skills from '@/components/skills/skills.vue'
 import ScrollUpBtn from '@/components/button/scrollUpBtn'
+import Projects from '@/components/projects/projects.vue'
 // import NomalText from '@/components/text/text.vue'
 // import BoldText from '@/components/text/textBold.vue'
 
@@ -54,7 +56,8 @@ export default {
     Profile,
     AboutMe,
     Skills,
-    ScrollUpBtn
+    ScrollUpBtn,
+    Projects
     // NomalText,
     // BoldText
   },
@@ -69,18 +72,23 @@ export default {
     aboutMeH: null,
     // skills태그 top값
     skillsH: null,
+    // projects 태그 top 값
+    projectsH: null,
     // 애니메이션
     mainFadeIn: {
       classes: 'fadeIn',
       duration: 2000
     },
     aboutMeAnimation: {
-      classes: 'tada',
-      delay: 500,
+      classes: 'bounceInUp',
       duration: 2000
     },
     skillsAnimation: {
       classes: 'fadeInLeft'
+    },
+    projectsAnimation: {
+      classes: 'fadeIn',
+      duration: 2000
     }
   }),
   created() {
@@ -92,6 +100,7 @@ export default {
 
     this.aboutMeH = document.getElementById("aboutMeSection").getBoundingClientRect().top;
     this.skillsH = document.getElementById("skillsSection").getBoundingClientRect().top;
+    this.projectsH = document.getElementById("projectsSection").getBoundingClientRect().top;
   },
   destroyed() {
     document.removeEventListener('scroll', this.scrollEvents)
@@ -116,23 +125,36 @@ export default {
           this.headerAboutMeToggle = true
           this.headerSkillsToggle = false
           this.headerProjectsToggle = false
-          console.log("어바웃미")
         }
+        // skills 영역
         if((scrollH + contentH) > this.skillsH) {
+          if((scrollH + contentH) < this.projectsH){
+            // 애니메이션을 위한 변수 초기화
+            this.aboutMeAniVal = 0 // 어바웃미 애니메이션 변수
+            // 애니메이션은 한번만 작동해야하기에 조건문 걸어놈
+            if(this.skilsAniVal < 1) {
+              document.getElementById('skillsSection').click();
+              this.skilsAniVal++
+            }
+            // 상단으로 보내는 스크롤 버튼
+            this.scrollUpBtnToggle = true
+            // skills 태그 애니매이션 작동 id를 넣어서 click 이벤트 달면 될듯
+            this.headerAboutMeToggle = false
+            this.headerSkillsToggle = true
+            this.headerProjectsToggle = false
+          }
+        }
+        // projects 영역
+        if((scrollH + contentH) > this.projectsH) {
           // 애니메이션을 위한 변수 초기화
           this.aboutMeAniVal = 0 // 어바웃미 애니메이션 변수
-          // 애니메이션은 한번만 작동해야하기에 조건문 걸어놈
-          if(this.skilsAniVal < 1) {
-            document.getElementById('skillsSection').click();
-            this.skilsAniVal++
-          }
+          this.skilsAniVal = 0 // 스킬 애니메이션
           // 상단으로 보내는 스크롤 버튼
           this.scrollUpBtnToggle = true
           // skills 태그 애니매이션 작동 id를 넣어서 click 이벤트 달면 될듯
           this.headerAboutMeToggle = false
-          this.headerSkillsToggle = true
-          this.headerProjectsToggle = false
-          console.log("스킬")
+          this.headerSkillsToggle = false
+          this.headerProjectsToggle = true
         }
       }else{
         // 애니메이션 변수 초기화
@@ -156,6 +178,7 @@ export default {
     },
     clickProjects() {
       console.log("프로젝트 클릭")
+      window.scrollTo({top: this.projectsH - 70, left: 0, behavior: 'smooth'})
     }
   }
 };
