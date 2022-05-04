@@ -1,8 +1,9 @@
 <template>
   <v-row
     no-gutters
-    style="padding-top: 170px; padding-bottom: 170px;"
+    style="height: 100vh;"
     justify="center"
+    align="center"
   >
     <v-col
       cols="auto"

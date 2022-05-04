@@ -12,27 +12,54 @@
       class="meBackground pa-0"
     >
       <v-row
-        :style="`height: 100%;  padding-top: 64px;`"
+        :style="`padding-top: 64px;`"
         no-gutters
         justify="center"
       >
         <v-col>
           <Profile v-animate-css="mainFadeIn" />
           <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
-          <AboutMe
-            id="aboutMeSection"
-            v-animate-css.click="aboutMeAnimation"
-          />
+          <v-row
+            style="height: 100vh;"
+            align="center"
+            justify="center"
+            no-gutters
+          >
+            <v-col>
+              <AboutMe
+                id="aboutMeSection"
+                v-animate-css.click="aboutMeAnimation"
+              />
+            </v-col>
+          </v-row>
           <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
-          <Skills
-            id="skillsSection"
-            v-animate-css.click="skillsAnimation"
-          />
+          <v-row
+            style="height: 100vh;"
+            align="center"
+            justify="center"
+            no-gutters
+          >
+            <v-col>
+              <Skills
+                id="skillsSection"
+                v-animate-css.click="skillsAnimation"
+              />
+            </v-col>
+          </v-row>
           <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
-          <Projects
-            id="projectsSection"
-            v-animate-css.hover="projectsAnimation"
-          />
+          <v-row
+            style="min-height: 100vh"
+            align="center"
+            justify="center"
+            no-gutters
+          >
+            <v-col>
+              <Projects
+                id="projectsSection"
+                v-animate-css="projectsAnimation"
+              />
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <ScrollUpBtn v-show="scrollUpBtnToggle" />
