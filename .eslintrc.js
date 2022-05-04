@@ -3,9 +3,10 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
+  // 'plugin:vuetify/recommended',
   extends: [
     'plugin:vue/recommended',
-    'plugin:vuetify/recommended',
+
     'eslint:recommended',
   ],
   env: {
