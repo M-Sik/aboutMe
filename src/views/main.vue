@@ -123,6 +123,7 @@ export default {
     // this.clientWidth = document.documentElement.clientWidth
   },
   mounted() {
+    window.scrollTo(0, 0)
     document.addEventListener('scroll', this.scrollEvents);
 
     this.aboutMeH = document.getElementById("aboutMeSection").getBoundingClientRect().top;
