@@ -19,7 +19,7 @@
           font-size="24"
         />
         <NomalText
-          text-value="chium 서비스는 Web App으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
+          text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
           font-size="19"
         />
         <div
@@ -85,8 +85,12 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="front-end(Web App 신규개발 & 운영)"
+              text-value="front-end(WebView 신규개발 & 운영)"
               font-size="20"
+            />
+            <NomalText
+              text-value="- SMS 본인인증 서비스 구현(아임포트, 다날)"
+              font-size="19"
             />
             <NomalText
               text-value="- Rest 통신을 위한 axios 공통 모듈 구현"
