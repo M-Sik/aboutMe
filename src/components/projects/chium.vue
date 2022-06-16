@@ -129,7 +129,7 @@
               font-size="19"
             />
             <NomalText
-              text-value="- vue-pinch-zoom 라이브러를 사용하여 이미지 확대 기능 구현"
+              text-value="- vue-pinch-zoom 라이브러리를 사용하여 이미지 확대 기능 구현"
               font-size="19"
             />
             <NomalText
@@ -207,7 +207,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="font-end 기준 70%"
+              text-value="front-end 기준 70%"
               font-size="20"
             />
             <BoldText
