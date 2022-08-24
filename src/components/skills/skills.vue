@@ -4,7 +4,7 @@
       background: #FCAF1B;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
-      margin: 0px 220px;
+      margin: 10vh 10vw;
       padding: 50px 300px;
     "
   >
@@ -96,7 +96,7 @@
           <BoldText
             style="text-align: center;"
             class="black--text"
-            text-value="JS"
+            text-value="CSS"
             font-size="24"
           />
         </div>

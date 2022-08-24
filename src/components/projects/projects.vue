@@ -4,7 +4,7 @@
       background: #111110;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
-      margin: 0px 220px;
+      margin: 10vh 10vw;
       padding: 50px 100px;
     "
   >
@@ -22,12 +22,14 @@
       </v-col>
     </v-row>
     <Chium />
+    <Neuru class="mt-10" />
   </v-card>
 </template>
 
 <script>
 import BoldText from '@/components/text/textBold.vue'
 import Chium from '@/components/projects/chium.vue'
+import Neuru from '@/components/projects/neuru.vue'
 
 export default {
   name: 'Projects',
@@ -35,6 +37,7 @@ export default {
     // NomalText,
     BoldText,
     Chium,
+    Neuru,
   },
 }
 </script>

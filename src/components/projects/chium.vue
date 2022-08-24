@@ -15,13 +15,50 @@
       >
         <BoldText
           class="black--text"
-          text-value="chium(Play Store 배포 완료)"
+          text-value="Chium"
           font-size="24"
         />
         <NomalText
+          class="mt-2"
           text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
           font-size="19"
         />
+        <v-row
+          class="mt-4"
+          no-gutters
+        >
+          <v-col
+            class="mr-3"
+            cols="auto"
+          >
+            <v-img
+              width="160"
+              height="56"
+              src="@/assets/images/googlePlay.png"
+              @click="googlePlayBtn"
+            />
+            <a
+              id="googlePlay"
+              target="blank"
+              href="https://play.google.com/store/apps/details?id=aos.gonsoftware.chium"
+              class="d-none"
+            />
+          </v-col>
+          <v-col cols="auto">
+            <v-img
+              width="160"
+              height="56"
+              src="@/assets/images/appStore.png"
+              @click="appStoreBtn"
+            />
+            <a
+              id="appStore"
+              target="blank"
+              href="https://apps.apple.com/kr/app/%EC%B9%98%EC%9B%80/id1623767946"
+              class="d-none"
+            />
+          </v-col>
+        </v-row>
         <div
           v-show="!detailToggle"
           class="mt-4"
@@ -140,6 +177,10 @@
               text-value="- 서비스를 이용하는 클라이언트의 Os 저장 기능 구현"
               font-size="19"
             />
+            <NomalText
+              text-value="- JSDoc을 사용하여 주석 처리 작업 주도"
+              font-size="19"
+            />
           </v-col>
         </v-row>
 
@@ -160,7 +201,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="html, js, css"
+              text-value="javaScript, html, css"
               font-size="20"
             />
           </v-col>
@@ -225,7 +266,7 @@
             />
             <BoldText
               class="black--text"
-              text-value="2. 서비스 관련(개인 배출자, 사업자 배출자, 폐기물 수거 업체, 마이페이지)"
+              text-value="2. 서비스 관련"
               font-size="20"
             />
             <NomalText
@@ -264,6 +305,12 @@ export default {
   methods: {
     chiumDetail() {
       this.detailToggle = !this.detailToggle
+    },
+    googlePlayBtn() {
+      document.getElementById('googlePlay').click()
+    },
+    appStoreBtn() {
+      document.getElementById('appStore').click()
     }
   }
 }
