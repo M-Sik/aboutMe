@@ -1,12 +1,12 @@
 <template>
   <v-app-bar
+    v-if="!$vuetify.breakpoint.mobile"
     elevation="0"
     class="meBackground px-6"
     fixed
   >
     <v-row
       justify="space-between"
-      style="height: 100%"
       no-gutters
       align="center"
     >
@@ -40,14 +40,12 @@
         cols="auto"
       >
         <NomalText
-          v-show="!$vuetify.breakpoint.mobile"
           :class="{greyColorText: aboutMeToggle===false, blackColorText: aboutMeToggle===true}"
           text-value="AboutMe"
           font-size="24"
           @click.native="clickAboutMe"
         />
         <NomalText
-          v-show="!$vuetify.breakpoint.mobile"
           :class="{greyColorText: skillsToggle===false, blackColorText: skillsToggle===true}"
           text-value="Skills"
           font-size="24"
@@ -55,11 +53,39 @@
           @click.native="clickSkills"
         />
         <NomalText
-          v-show="!$vuetify.breakpoint.mobile"
           text-value="Projects"
           font-size="24"
           :class="{greyColorText: projectsToggle===false, blackColorText: projectsToggle===true}"
           @click.native="clickProjects"
+        />
+      </v-col>
+    </v-row>
+  </v-app-bar>
+  <!-- 테블릿, 모바일일때 -->
+  <v-app-bar
+    v-else
+    style="width: 100vw;"
+    elevation="0"
+    class="meBackground pl-2"
+    fixed
+  >
+    <v-row
+      align="center"
+      no-gutters
+    >
+      <v-col cols="auto">
+        <BoldText
+          class="pr-1"
+          text-value="dev_sik"
+          font-size="16"
+        />
+      </v-col>
+      <v-col cols="auto">
+        <NomalText
+          class="mt-1"
+          text-value="front-end developer"
+          style="color: #727070"
+          font-size="14"
         />
       </v-col>
     </v-row>

@@ -1,7 +1,10 @@
 <template>
   <v-btn
     fab
-    class="topButton black"
+    :class="{
+      topButton: !$vuetify.breakpoint.mobile,
+      mobileTopButton: $vuetify.breakpoint.mobile,
+    }"
     @click="upScroll"
   >
     <v-icon
@@ -33,5 +36,15 @@ export default {
   border: white 1px solid;
   position: fixed;
   z-index: 99;
+  background: black !important;
+}
+.mobileTopButton {
+  top: 85%;
+  left: 80%;
+  border-radius: 50%;
+  border: white 1px solid;
+  position: fixed;
+  z-index: 99;
+  background: black !important;
 }
 </style>

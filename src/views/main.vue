@@ -17,21 +17,43 @@
         justify="center"
       >
         <v-col>
-          <Profile v-animate-css="mainFadeIn" />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
+          <Profile
+            v-if="!$vuetify.breakpoint.mobile"
+            v-animate-css="mainFadeIn"
+          />
+          <MProfile
+            v-else
+            v-animate-css="mainFadeIn"
+          />
+          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
           <AboutMe
+            v-if="!$vuetify.breakpoint.mobile"
             id="aboutMeSection"
             v-animate-css.click="aboutMeAnimation"
           />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
+          <MAboutMe
+            v-else
+            id="aboutMeSection"
+          />
+          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
           <Skills
+            v-if="!$vuetify.breakpoint.mobile"
             id="skillsSection"
             v-animate-css.click="skillsAnimation"
           />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 160px;" />
+          <MSkills
+            v-else
+            id="skillsSection"
+          />
+          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
           <Projects
+            v-if="!$vuetify.breakpoint.mobile"
             id="projectsSection"
             v-animate-css="projectsAnimation"
+          />
+          <MProjects
+            v-else
+            id="projectsSection"
           />
         </v-col>
       </v-row>
@@ -47,6 +69,10 @@ import AboutMe from '@/components/aboutMe/aboutMe.vue'
 import Skills from '@/components/skills/skills.vue'
 import ScrollUpBtn from '@/components/button/scrollUpBtn'
 import Projects from '@/components/projects/projects.vue'
+import MProfile from '@/components/profile/m.profile.vue'
+import MAboutMe from '@/components/aboutMe/m.aboutMe.vue'
+import MSkills from '@/components/skills/m.skills.vue'
+import MProjects from '@/components/projects/m.projects.vue'
 // import NomalText from '@/components/text/text.vue'
 // import BoldText from '@/components/text/textBold.vue'
 
@@ -57,7 +83,11 @@ export default {
     AboutMe,
     Skills,
     ScrollUpBtn,
-    Projects
+    Projects,
+    MProfile,
+    MAboutMe,
+    MSkills,
+    MProjects,
     // NomalText,
     // BoldText
   },
@@ -108,11 +138,11 @@ export default {
   },
   methods: {
     scrollEvents() {
-      let totalH = document.documentElement.scrollHeight
+      // let totalH = document.documentElement.scrollHeight
       let scrollH = document.documentElement.scrollTop
       let contentH = this.$vuetify.breakpoint.height
 
-      console.log(totalH, scrollH, contentH, this.aboutMeH, this.skillsH)
+      // console.log(totalH, scrollH, contentH, this.aboutMeH, this.skillsH)
       if((scrollH + contentH) > this.aboutMeH) {
         // about me 영역
         if((scrollH + contentH) < this.skillsH) {

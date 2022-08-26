@@ -1,4 +1,5 @@
 <template>
+  <!-- 웹 화면일때 -->
   <v-row
     no-gutters
     style="height: 100vh;"
@@ -10,8 +11,7 @@
       class="pr-10"
     >
       <v-img
-        width="430"
-        height="430"
+        style="width: 25vw;"
         src="@/assets/images/profileImg.png"
       />
     </v-col>
