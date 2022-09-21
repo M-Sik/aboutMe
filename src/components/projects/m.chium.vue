@@ -11,6 +11,11 @@
       font-size="16"
     />
     <NomalText
+      class="mt-2"
+      text-value="* 서비스 기획 단계부터 참여 하였습니다."
+      font-size="14"
+    />
+    <NomalText
       class="mt-3"
       text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
       font-size="14"
@@ -100,21 +105,17 @@
           font-size="14"
         />
         <div style="font-size: 12px;">
+          - 화면 개발 및 데이터 연계
+          <br>
           - SMS 본인인증 서비스 구현 (아임포트, 다날)
           <br>
           - Rest 통신을 위한 axios 공통 모듈 구현
-          <br>
-          - 로그인 기능 구현
           <br>
           - axios interceptors를 이용하여 토큰 인증 로직 구현
           <br>
           - 카카오 주소검색 api를 통해 주소검색 기능 구현
           <br>
           - 카카오 map api를 통하여 위도 및 경도 추출 기능 구현
-          <br>
-          - Vuex 공통 모듈 구현
-          <br>
-          - 파일 업로드 기능 구현
           <br>
           - Tesseract.js 라이브러리를 이용한 orc기능 구현
           <br>
@@ -125,6 +126,8 @@
           - fcm push별 화면이동 로직 구현
           <br>
           - 서비스를 이용하는 클라이언트의 Os판별 및 저장기능 구현
+          <br>
+          - JSDoc을 사용하여 주석 처리 작업 주도
         </div>
         <BoldText
           class="mt-4"
@@ -144,6 +147,44 @@
           text-value="Vue.js, Vuetify, Vuex"
           font-size="14"
         />
+        <BoldText
+          class="mt-4"
+          text-value="고충사항"
+          font-size="16"
+        />
+        <BoldText
+          class="mt-1"
+          text-value="처음으로 실무에서 프로젝트를 진행해보니 초기 개발 및 운영에 어려움이 있었습니다."
+          font-size="14"
+        />
+        <BoldText
+          text-value="1. 중복된 코드(style)"
+          font-size="14"
+        />
+        <div style="font-size: 12px;">
+          개발 초기에는 inline style 방식으로 화면을 구성하였으나 코드 양이 많아질수록 중복되는 스타일이 많아 어려움이 있었습니다. 이를 해결하기 위해 프로젝트에 scss를 도입하였고 자주 쓰이는 스타일을 변수 및 클래스로 지정하여 이를 해결하였습니다.
+        </div>
+        <BoldText
+          text-value="2. 중복된 코드(js)"
+          font-size="14"
+        />
+        <div style="font-size: 12px;">
+          여러 js 파일에서 같은 동작을 하는 함수들이 많아 소스 수정 시 여러 js 파일을 수정해야 하는 어려움이 있었습니다. 이를 해결하기 위해 2번 이상 사용하는 함수는 모듈로 작성하여 export처리 하였습니다.
+        </div>
+        <BoldText
+          text-value="3. 응집도"
+          font-size="14"
+        />
+        <div style="font-size: 12px;">
+          서비스 운영 중 소스를 수정해야 할 때 어떤 파일에서 수정을 해야 할지 찾아가며 시간을 소비하였습니다. 이 문제점을 해결하기 위해 서로 관련 있는 소스, 파일들을 모아서 관리하여 문제를 해결하였습니다.
+        </div>
+        <BoldText
+          text-value="4. 협업"
+          font-size="14"
+        />
+        <div style="font-size: 12px;">
+          프로젝트를 같이 수행하는 인원들이 모두 프로젝트를 해본 경험이 없었습니다. 작업에 대해 문서 작성을 하지도 않았고 구두로 작업을 진행하였으나 업무가 많을 경우 수정, 개선 사항을 잊는 경우도 종종 발생하여 회사에 notion을 도입하여 이 문제점을 해결하였습니다.
+        </div>
         <BoldText
           class="mt-4"
           text-value="참여율"

@@ -29,7 +29,7 @@
           <AboutMe
             v-if="!$vuetify.breakpoint.mobile"
             id="aboutMeSection"
-            v-animate-css.click="aboutMeAnimation"
+            v-animate-css="aboutMeAnimation"
           />
           <MAboutMe
             v-else
@@ -39,7 +39,6 @@
           <Skills
             v-if="!$vuetify.breakpoint.mobile"
             id="skillsSection"
-            v-animate-css.click="skillsAnimation"
           />
           <MSkills
             v-else
@@ -49,7 +48,6 @@
           <Projects
             v-if="!$vuetify.breakpoint.mobile"
             id="projectsSection"
-            v-animate-css="projectsAnimation"
           />
           <MProjects
             v-else
@@ -109,17 +107,6 @@ export default {
       classes: 'fadeIn',
       duration: 2000
     },
-    aboutMeAnimation: {
-      classes: 'bounceInUp',
-      duration: 2000
-    },
-    skillsAnimation: {
-      classes: 'fadeInLeft'
-    },
-    projectsAnimation: {
-      classes: 'fadeIn',
-      duration: 2000
-    }
   }),
   created() {
     window.scrollTo(0, 0)
@@ -150,7 +137,7 @@ export default {
           this.skilsAniVal = 0 // 스킬 애니메이션
           // 애니메이션은 한번만 작동해야하기에 조건문 걸어놈
           if(this.aboutMeAniVal < 1) {
-            document.getElementById('aboutMeSection').click();
+            // document.getElementById('aboutMeSection').click();
             this.aboutMeAniVal++
           }
           this.headerAboutMeToggle = true
@@ -164,7 +151,7 @@ export default {
             this.aboutMeAniVal = 0 // 어바웃미 애니메이션 변수
             // 애니메이션은 한번만 작동해야하기에 조건문 걸어놈
             if(this.skilsAniVal < 1) {
-              document.getElementById('skillsSection').click();
+              // document.getElementById('skillsSection').click();
               this.skilsAniVal++
             }
             // 상단으로 보내는 스크롤 버튼

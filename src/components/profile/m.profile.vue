@@ -35,7 +35,7 @@
         />
         <BoldText
           class="text-center"
-          text-value="✌️1년차 front-end 개발자 김명식 입니다.✌"
+          text-value="✌️2년차 front-end 개발자 김명식 입니다.✌"
           font-size="14"
         />
       </div>

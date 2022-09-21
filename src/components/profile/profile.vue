@@ -32,7 +32,7 @@
         font-size="32"
       />
       <BoldText
-        text-value="✌️1년차 front-end 개발자 김명식 입니다.✌"
+        text-value="✌️2년차 front-end 개발자 김명식 입니다.✌"
         font-size="32"
       />
     </v-col>
@@ -53,5 +53,16 @@ export default {
 </script>
 
 <style scoped>
-
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
 </style>
