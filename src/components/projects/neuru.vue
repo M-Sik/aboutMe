@@ -149,7 +149,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="Vue.js, Vuetify, Vuex"
+              text-value="Vue.js, Vuetify, Vuex, Git, GitHub"
               font-size="20"
             />
           </v-col>

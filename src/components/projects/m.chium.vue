@@ -144,7 +144,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="Vue.js, Vuetify, Vuex"
+          text-value="Vue.js, Vuetify, Vuex, Git, GitHub"
           font-size="14"
         />
         <BoldText
