@@ -122,10 +122,11 @@
           text-value="블로그"
           font-size="14"
         />
-        <NomalText
-          text-value="sikk.tistory.com"
-          font-size="12"
-        />
+        <a
+          target="blank"
+          style="font-size: 12px; color: #413F3F;"
+          href="https://sikk.tistory.com/"
+        >sikk.tistory.com</a>
       </v-col>
     </v-row>
     <v-row
@@ -222,5 +223,16 @@ export default {
 </script>
 
 <style>
-
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: none;
+}
 </style>

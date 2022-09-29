@@ -24,15 +24,15 @@
         font-size="32"
       />
       <BoldText
-        text-value="코드 재사용과"
+        text-value="코드 재사용과 새로운 도전을 즐기며"
         font-size="32"
       />
       <BoldText
-        text-value="새로운 도전을 즐기며 코딩하고 있는"
+        text-value="12개월동안 코딩하고 있는"
         font-size="32"
       />
       <BoldText
-        text-value="✌️2년차 front-end 개발자 김명식 입니다.✌"
+        text-value="✌️front-end 개발자 김명식 입니다.✌"
         font-size="32"
       />
     </v-col>

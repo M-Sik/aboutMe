@@ -12,7 +12,7 @@
     />
     <NomalText
       class="mt-3"
-      text-value="chium 서비스를 운영하고 있는 회사의 홈페이지 입니다. 데이터 연동이 없는 정적인 반응형 웹 페이지로 구현 되어 있습니다."
+      text-value="chium 서비스를 운영하고 있는 회사의 홈페이지 입니다. 데이터 연동이 없는 반응형 웹 페이지로 구현 되어 있습니다."
       font-size="14"
     />
     <div
@@ -65,18 +65,32 @@
           class="my-3"
         />
         <BoldText
+          class="mt-4"
+          text-value="프로젝트"
+          font-size="16"
+        />
+        <BoldText
+          text-value="느루 기업 홈페이지"
+          font-size="14"
+        />
+        <BoldText
+          class="mt-4"
+          text-value="프로젝트 기간"
+          font-size="16"
+        />
+        <BoldText
+          text-value="2022.05 ~ 2022.05(1주)"
+          font-size="14"
+        />
+        <BoldText
+          class="mt-4"
           text-value="담당업무"
           font-size="16"
         />
         <BoldText
-          text-value="front-end(신규개발 & 운영)"
+          text-value="front-end(반응형 웹)"
           font-size="14"
         />
-        <div style="font-size: 12px;">
-          - 카카오 api를 이용한 카카오 채널 추가 기능 구현
-          <br>
-          - 모든 페이지 반응형 웹 구현
-        </div>
         <BoldText
           class="mt-4"
           text-value="개발언어"
@@ -93,6 +107,15 @@
         />
         <BoldText
           text-value="Vue.js, Vuetify, Vuex, Git, GitHub"
+          font-size="14"
+        />
+        <BoldText
+          class="mt-4"
+          text-value="개발 인원"
+          font-size="16"
+        />
+        <BoldText
+          text-value="1명"
           font-size="14"
         />
         <BoldText

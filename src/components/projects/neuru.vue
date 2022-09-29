@@ -20,7 +20,7 @@
         />
         <NomalText
           class="mt-2"
-          text-value="chium 서비스를 운영하고 있는 (주)느루의 홈페이지 입니다. 데이터 연동 없는 정적인 반응형 웹페이지로 구현 되어있습니다."
+          text-value="chium 서비스를 운영하고 있는 (주)느루의 홈페이지 입니다. 데이터 연동 없는 반응형 웹페이지로 구현 되어있습니다."
           font-size="19"
         />
         <div class="mt-4">
@@ -81,7 +81,54 @@
           style="border: solid 1px #6D6A6A;"
           class="my-3"
         />
-        <v-row no-gutters>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              text-value="프로젝트"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="느루 기업 홈페이지"
+              font-size="20"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              text-value="프로젝트 기간"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="2022.05 ~ 2022.05(1주)"
+              font-size="20"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
           <v-col
             style="width: 100px;"
             cols="auto"
@@ -95,16 +142,8 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="front-end(신규개발 & 운영)"
+              text-value="front-end(반응형 웹)"
               font-size="20"
-            />
-            <NomalText
-              text-value="- 카카오 api를 이용한 카카오 채널 추가 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 모든 페이지 반응형 웹 구현"
-              font-size="19"
             />
           </v-col>
         </v-row>
@@ -150,6 +189,28 @@
             <BoldText
               class="black--text"
               text-value="Vue.js, Vuetify, Vuex, Git, GitHub"
+              font-size="20"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              text-value="개발 인원"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="1명"
               font-size="20"
             />
           </v-col>

@@ -16,7 +16,14 @@
         :text-value="firstTitle"
         font-size="24"
       />
+      <a
+        v-if="firstTitle === '블로그'"
+        target="blank"
+        style="font-size: 20px; color: #413F3F;"
+        href="https://sikk.tistory.com/"
+      >{{ secondTitle }}</a>
       <NomalText
+        v-else
         :text-value="secondTitle"
         font-size="20"
       />

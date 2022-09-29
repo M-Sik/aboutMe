@@ -113,7 +113,56 @@
           style="border: solid 1px #6D6A6A;"
           class="my-3"
         />
-        <v-row no-gutters>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              class="text-end"
+              text-value="프로젝트"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="chium"
+              font-size="20"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              class="text-end"
+              text-value="프로젝트 기간"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="신규개발(2021.12 ~ 2022.04), 고도화(2022.04 ~ 진행중)"
+              font-size="20"
+            />
+          </v-col>
+        </v-row>
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
           <v-col
             style="width: 100px;"
             cols="auto"
@@ -131,51 +180,23 @@
               font-size="20"
             />
             <NomalText
-              text-value="- 화면 개발 및 데이터 연계"
+              text-value="- UI 개발 및 데이터 연계"
               font-size="19"
             />
             <NomalText
-              text-value="- SMS 본인인증 서비스 구현(아임포트, 다날)"
+              text-value="- 외부모듈 연계(카카오, 다날, 아임포트)"
               font-size="19"
             />
             <NomalText
-              text-value="- Rest 통신을 위한 axios 공통 모듈 구현"
+              text-value="- REST API를 위한 axios 공동모듈 구현"
               font-size="19"
             />
             <NomalText
-              text-value="- axios interceptors를 이용하여 토큰(access, refresh) 인증 로직 구현"
+              text-value="- Axios Intercopteors를 이용한 Jwt 인증로직 구현"
               font-size="19"
             />
             <NomalText
-              text-value="- 카카오 주소검색 api를 통해 주소 검색 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 카카오 map api를 통하여 위, 경도 추출 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- Tesseract.js 라이브러리를 이용한 이미지 ocr 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- Android, Ios와 통신하기 위한 bridge 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- vue-pinch-zoom 라이브러리를 사용하여 이미지 확대 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- fcm 푸쉬 메세지 별 프론트 화면이동 및 데이터 처리 로직 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 서비스를 이용하는 클라이언트의 Os 저장 기능 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- JSDoc을 사용하여 주석 처리 작업 주도"
+              text-value="- 프로젝트 소스 형상관리(Git, Github)"
               font-size="19"
             />
           </v-col>
@@ -282,6 +303,29 @@
             <NomalText
               text-value="프로젝트를 같이 수행하는 인원들이 모두 프로젝트를 해본 경험이 없었습니다. 작업에 대해 문서 작성을 하지도 않았고 구두로 작업을 진행하였으나 업무가 많을 경우 수정, 개선 사항을 잊는 경우도 종종 발생하여 회사에 notion을 도입하여 이 문제점을 해결하였습니다."
               font-size="19"
+            />
+          </v-col>
+        </v-row>
+
+        <v-row
+          class="mt-3"
+          no-gutters
+        >
+          <v-col
+            style="width: 100px;"
+            cols="auto"
+            class="pr-5"
+          >
+            <BoldText
+              text-value="개발 인원"
+              font-size="20"
+            />
+          </v-col>
+          <v-col>
+            <BoldText
+              class="black--text"
+              text-value="Front-End 2명, Back-End 2명"
+              font-size="20"
             />
           </v-col>
         </v-row>
