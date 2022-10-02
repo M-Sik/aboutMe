@@ -18,6 +18,14 @@
           text-value="Chium"
           font-size="24"
         />
+        <v-btn
+          class="mt-2"
+          style="color: blue;"
+          href="/project-chium.pdf"
+          download
+        >
+          👉 프로젝트 상세내용 다운로드 👈
+        </v-btn>
         <NomalText
           class="mt-2"
           text-value="* 서비스 기획 단계부터 참여 하였습니다."
