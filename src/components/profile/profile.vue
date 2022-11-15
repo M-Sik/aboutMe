@@ -28,7 +28,7 @@
         font-size="32"
       />
       <BoldText
-        text-value="12개월동안 코딩하고 있는"
+        text-value="14개월동안 코딩하고 있는"
         font-size="32"
       />
       <BoldText
