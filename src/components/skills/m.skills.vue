@@ -119,6 +119,25 @@
             font-size="16"
           />
         </div>
+        <div>
+          <v-row
+            no-gutters
+            justify="center"
+          >
+            <v-col cols="auto">
+              <img
+                style="object-fit: contain; width: 14vw;"
+                src="@/assets/images/tsImg.png"
+              >
+            </v-col>
+          </v-row>
+          <BoldText
+            style="text-align: center;"
+            class="black--text"
+            text-value="TS"
+            font-size="16"
+          />
+        </div>
       </v-col>
     </v-row>
   </v-card>

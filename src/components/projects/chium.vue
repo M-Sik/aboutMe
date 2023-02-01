@@ -162,7 +162,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="신규개발(2021.12 ~ 2022.04), 고도화(2022.04 ~ 진행중)"
+              text-value="신규개발(2021.12 ~ 2022.04), 고도화(2022.04 ~ 2022.10)"
               font-size="20"
             />
           </v-col>

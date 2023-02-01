@@ -30,7 +30,7 @@
         />
         <BoldText
           class="text-center"
-          text-value="14개월동안 코딩하고 있는"
+          text-value="17개월동안 코딩하고 있는"
           font-size="14"
         />
         <BoldText

@@ -100,6 +100,20 @@
             font-size="24"
           />
         </div>
+        <div>
+          <img
+            height="120"
+            width="120"
+            style="object-fit: contain;"
+            src="@/assets/images/tsImg.png"
+          >
+          <BoldText
+            style="text-align: center;"
+            class="black--text"
+            text-value="TS"
+            font-size="24"
+          />
+        </div>
       </v-col>
     </v-row>
   </v-card>
