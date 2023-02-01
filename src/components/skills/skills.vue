@@ -110,7 +110,7 @@
           <BoldText
             style="text-align: center;"
             class="black--text"
-            text-value="TS1"
+            text-value="TS"
             font-size="24"
           />
         </div>
