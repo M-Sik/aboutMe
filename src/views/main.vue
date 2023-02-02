@@ -187,16 +187,16 @@ export default {
     },
     clickAboutMe() {
       console.log("어바웃미 클릭")
-      window.scrollTo({top: this.aboutMeH - 70, left: 0, behavior: 'smooth'})
+      window.scrollTo({top: this.aboutMeH - 220, left: 0, behavior: 'smooth'})
       // document.getElementById("aboutMeSection").scrollIntoView()
     },
     clickSkills() {
       console.log("스킬 클릭")
-      window.scrollTo({top: this.skillsH - 70, left: 0, behavior: 'smooth'})
+      window.scrollTo({top: this.skillsH - 220, left: 0, behavior: 'smooth'})
     },
     clickProjects() {
       console.log("프로젝트 클릭")
-      window.scrollTo({top: this.projectsH - 70, left: 0, behavior: 'smooth'})
+      window.scrollTo({top: this.projectsH - 100, left: 0, behavior: 'smooth'})
     }
   }
 };

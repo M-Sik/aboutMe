@@ -21,7 +21,8 @@
         />
       </v-col>
     </v-row>
-    <Chium />
+    <Wastecommunity />
+    <Chium class="mt-10" />
     <Neuru class="mt-10" />
   </v-card>
 </template>
@@ -30,6 +31,7 @@
 import BoldText from '@/components/text/textBold.vue'
 import Chium from '@/components/projects/chium.vue'
 import Neuru from '@/components/projects/neuru.vue'
+import Wastecommunity from './wastecommunity.vue'
 
 export default {
   name: 'Projects',
@@ -38,6 +40,7 @@ export default {
     BoldText,
     Chium,
     Neuru,
+    Wastecommunity,
   },
 }
 </script>

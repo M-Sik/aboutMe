@@ -13,7 +13,8 @@
       text-value="Projects"
       font-size="20"
     />
-    <MChium class="mt-5" />
+    <MWasteCommunity class="mt-6" />
+    <MChium class="mt-6" />
     <MNeuru class="mt-6" />
   </v-card>
 </template>
@@ -22,6 +23,7 @@
 import BoldText from '@/components/text/textBold.vue'
 import MChium from '@/components/projects/m.chium.vue'
 import MNeuru from '@/components/projects/m.neuru.vue'
+import MWasteCommunity from '@/components/projects/m.wastecommunity.vue'
 
 export default {
   name: "MProjects",
@@ -29,6 +31,7 @@ export default {
     BoldText,
     MChium,
     MNeuru,
+    MWasteCommunity
   }
 }
 </script>
