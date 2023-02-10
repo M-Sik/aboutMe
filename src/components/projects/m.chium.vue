@@ -7,7 +7,7 @@
   >
     <BoldText
       class="black--text"
-      text-value="Chium"
+      text-value="Chium - (주)느루"
       font-size="16"
     />
     <v-btn
@@ -148,7 +148,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="javaScript, html, css"
+          text-value="JavaScript, Html, Css"
           font-size="14"
         />
         <BoldText

@@ -7,7 +7,7 @@
   >
     <BoldText
       class="black--text"
-      text-value="Neuru HomePage"
+      text-value="Neuru HomePage - (주)느루"
       font-size="16"
     />
     <NomalText
@@ -97,7 +97,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="javaScript, html, css"
+          text-value="JavaScript, Html, Css"
           font-size="14"
         />
         <BoldText

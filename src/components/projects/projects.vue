@@ -21,7 +21,8 @@
         />
       </v-col>
     </v-row>
-    <Wastecommunity />
+    <ReactDiary />
+    <Wastecommunity class="mt-10" />
     <Chium class="mt-10" />
     <Neuru class="mt-10" />
   </v-card>
@@ -32,6 +33,7 @@ import BoldText from '@/components/text/textBold.vue'
 import Chium from '@/components/projects/chium.vue'
 import Neuru from '@/components/projects/neuru.vue'
 import Wastecommunity from './wastecommunity.vue'
+import ReactDiary from '@/components/projects/reactDiary.vue'
 
 export default {
   name: 'Projects',
@@ -41,6 +43,7 @@ export default {
     Chium,
     Neuru,
     Wastecommunity,
+    ReactDiary,
   },
 }
 </script>

@@ -15,7 +15,7 @@
       >
         <BoldText
           class="black--text"
-          text-value="Waste Community"
+          text-value="Waste Community - (주)위드위"
           font-size="24"
         />
         <v-btn
@@ -227,7 +227,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="TypeScript, html, css"
+              text-value="TypeScript, Html, Css"
               font-size="20"
             />
           </v-col>

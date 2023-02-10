@@ -29,7 +29,6 @@
           <AboutMe
             v-if="!$vuetify.breakpoint.mobile"
             id="aboutMeSection"
-            v-animate-css="aboutMeAnimation"
           />
           <MAboutMe
             v-else

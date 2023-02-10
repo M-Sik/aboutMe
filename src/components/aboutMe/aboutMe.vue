@@ -63,8 +63,8 @@
           class="mb-9"
           icon-name="mdi-account-details-outline"
           first-title="경력"
-          second-title="주식회사 느루(2021.09 ~ 2022.10)"
-          third-title="주식회사 위드위(2022.11 ~ 재직중)"
+          second-title="주식회사 위드위(2022.11 ~ 재직중)"
+          third-title="주식회사 느루(2021.09 ~ 2022.10)"
           fourth-title="담당업무 : front-end개발"
         />
       </v-col>

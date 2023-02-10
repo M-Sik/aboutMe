@@ -13,6 +13,7 @@
       text-value="Projects"
       font-size="20"
     />
+    <MReactDiary class="mt-6" />
     <MWasteCommunity class="mt-6" />
     <MChium class="mt-6" />
     <MNeuru class="mt-6" />
@@ -24,6 +25,7 @@ import BoldText from '@/components/text/textBold.vue'
 import MChium from '@/components/projects/m.chium.vue'
 import MNeuru from '@/components/projects/m.neuru.vue'
 import MWasteCommunity from '@/components/projects/m.wastecommunity.vue'
+import MReactDiary from '@/components/projects/m.reactDiary.vue'
 
 export default {
   name: "MProjects",
@@ -31,7 +33,8 @@ export default {
     BoldText,
     MChium,
     MNeuru,
-    MWasteCommunity
+    MWasteCommunity,
+    MReactDiary
   }
 }
 </script>

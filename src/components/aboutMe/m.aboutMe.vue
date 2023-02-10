@@ -197,11 +197,11 @@
           font-size="14"
         />
         <NomalText
-          text-value="주식회사 느루(2021.09 ~ 2022.10)"
+          text-value="주식회사 위드위(2022.11 ~ 재직중)"
           font-size="12"
         />
         <NomalText
-          text-value="주식회사 위드위(2022.11 ~ 재직중)"
+          text-value="주식회사 느루(2021.09 ~ 2022.10)"
           font-size="12"
         />
         <NomalText

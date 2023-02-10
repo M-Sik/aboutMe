@@ -40,7 +40,7 @@
             font-size="24"
           />
         </div>
-        <div>
+        <div class="mb-10">
           <img
             height="120"
             width="120"
@@ -51,6 +51,20 @@
             style="text-align: center;"
             class="black--text"
             text-value="VUE"
+            font-size="24"
+          />
+        </div>
+        <div>
+          <img
+            style="object-fit: contain;"
+            width="110"
+            height="120"
+            src="@/assets/images/vuetifyImg.png"
+          >
+          <BoldText
+            style="text-align: center;"
+            class="black--text"
+            text-value="VUETIFY"
             font-size="24"
           />
         </div>
@@ -75,12 +89,12 @@
             style="object-fit: contain;"
             width="110"
             height="120"
-            src="@/assets/images/vuetifyImg.png"
+            src="@/assets/images/reactImg.png"
           >
           <BoldText
             style="text-align: center;"
             class="black--text"
-            text-value="VUETIFY"
+            text-value="REACT"
             font-size="24"
           />
         </div>
