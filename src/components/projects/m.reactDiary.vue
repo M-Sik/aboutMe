@@ -35,7 +35,7 @@
     <div
       v-show="!detailToggle"
       class="mt-4"
-      style="display: flex;"
+      style="display: flex; cursor: pointer;"
       @click="chiumDetail"
     >
       <BoldText
@@ -52,7 +52,7 @@
     <div
       v-show="detailToggle"
       class="mt-4"
-      style="display: flex;"
+      style="display: flex; cursor: pointer;"
       @click="chiumDetail"
     >
       <BoldText
@@ -83,29 +83,29 @@
         />
         <BoldText
           class="mt-4"
-          text-value="도메인"
+          text-value="담당 업무"
           font-size="16"
         />
         <BoldText
-          text-value="https://devsik-diary.netlify.app/"
+          text-value="Front-End 개발"
           font-size="14"
         />
-        <BoldText
-          class="mt-4"
-          text-value="개발 언어"
-          font-size="16"
-        />
-        <BoldText
-          text-value="TypeScript, Html, Css"
-          font-size="14"
-        />
+        <div style="font-size: 12px;">
+          - 함수형 컴포넌트 기반의 반응형 UI 구현
+          <br>
+          - 상태관리 라이브러리인 Zustand를 이용하여 Props 복잡도 개선
+          <br>
+          - Material UI를 적절히 활용하여 빠른 UI 개발
+          <br>
+          - module.scss 를 이용하여 컴포넌트 스타일링, 공통된 스타일 Class는 common.scss에서 관리
+        </div>
         <BoldText
           class="mt-4"
           text-value="사용 기술"
           font-size="16"
         />
         <BoldText
-          text-value="React.js, Zustand, Material-UI, Scss, Git, GitHub"
+          text-value="React.js, TypeScript, Zustand, Scss, Material UI, Git, GitHub"
           font-size="14"
         />
 
@@ -119,21 +119,9 @@
           text-value="처음 사용해본 React.js"
           font-size="14"
         />
-        <BoldText
-          text-value="1. style"
-          font-size="14"
-        />
         <div style="font-size: 12px;">
-          React에서는 Css-in-Js방식을 많이 사용하는것 같습니다. Scss를 사용하여 프로젝트를 진행하고 싶어서 서치를 해보니 Vue에서의 scoped와 같이 React에서도 하나의 컴포넌트에 스타일을 부여하는 방법이 있었습니다. module.scss를 사용하는 것입니다. 이를 활용하여 편하게 마크업을 진행할 수 있었습니다.
+          Vue만 이용하여 서비스를 구현해보니 React에 대해 궁금하여 공부하고자 작은 프로젝트를 진행하였습니다. 프로젝트를 진행하며 Vue와 비슷하다는 생각이 들었으며, useState, useEffect, useMemo 등등 Hooks에 대해 공부할 수 있었습니다.
         </div>
-        <BoldText
-          text-value="2. script"
-          font-size="14"
-        />
-        <div style="font-size: 12px;">
-          Vue Option Api를 사용하여 프로젝트를 진행할 때 React 공식문서를 본적이 있었는데 저에게 어렵게 다가왔었습니다. 그 후 Vue Componition Api를 사용하여 프로젝트를 진행하였고, React프로젝트를 작업하다보니 Vue의 Compotion Api와 script 작성 방법이 비슷하여 어렵지 않게 프로젝트를 진행 하였습니다. Vue와 React는 같은 SPA여서 그런지 비슷한점(Life Cycle, State, State감지 등)이 많았고 프레임워크에 국한되지 않고 Js를 더 열심히 공부해야겠다고 느꼈습니다.
-        </div>
-
         <BoldText
           class="mt-4"
           text-value="개발 인원"
@@ -141,15 +129,6 @@
         />
         <BoldText
           text-value="1명, 개인프로젝트"
-          font-size="14"
-        />
-        <BoldText
-          class="mt-4"
-          text-value="참여율"
-          font-size="16"
-        />
-        <BoldText
-          text-value="100%"
           font-size="14"
         />
       </div>
