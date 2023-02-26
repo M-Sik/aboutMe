@@ -25,17 +25,17 @@
         />
         <BoldText
           class="text-center"
-          text-value="코드 재사용과 새로운 도전을 즐기며"
+          text-value="프로그래밍이라는 게임을 즐기며"
           font-size="14"
         />
         <BoldText
           class="text-center"
-          text-value="17개월동안 코딩하고 있는"
+          text-value="스타트업에서 일하고있는 2년차"
           font-size="14"
         />
         <BoldText
           class="text-center"
-          text-value="✌️front-end 개발자 김명식 입니다.✌"
+          text-value="✌️Front-End 개발자 김명식 입니다.✌"
           font-size="14"
         />
       </div>
