@@ -16,14 +16,12 @@
     <MReactDiary class="mt-6" />
     <MWasteCommunity class="mt-6" />
     <MChium class="mt-6" />
-    <MNeuru class="mt-6" />
   </v-card>
 </template>
 
 <script>
 import BoldText from '@/components/text/textBold.vue'
 import MChium from '@/components/projects/m.chium.vue'
-import MNeuru from '@/components/projects/m.neuru.vue'
 import MWasteCommunity from '@/components/projects/m.wastecommunity.vue'
 import MReactDiary from '@/components/projects/m.reactDiary.vue'
 
@@ -32,7 +30,6 @@ export default {
   components: {
     BoldText,
     MChium,
-    MNeuru,
     MWasteCommunity,
     MReactDiary
   }
