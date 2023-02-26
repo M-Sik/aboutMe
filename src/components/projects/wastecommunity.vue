@@ -28,11 +28,6 @@
         </v-btn>
         <NomalText
           class="mt-2"
-          text-value="* 서비스 기획 단계부터 참여 하였습니다."
-          font-size="19"
-        />
-        <NomalText
-          class="mt-2"
           text-value="Waste Community 서비스는 폐기물 관련된 정보를 고유하며 이야기를 나눌 수 있는 공간을 제공하는 서비스이며 반응형 웹으로 구현되어있습니다."
           font-size="19"
         />

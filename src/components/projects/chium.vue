@@ -28,11 +28,6 @@
         </v-btn>
         <NomalText
           class="mt-2"
-          text-value="* 서비스 기획 단계부터 참여 하였습니다."
-          font-size="19"
-        />
-        <NomalText
-          class="mt-2"
           text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
           font-size="19"
         />
@@ -75,7 +70,7 @@
         <div
           v-show="!detailToggle"
           class="mt-4"
-          style="display: flex;"
+          style="display: flex; cursor: pointer;"
           @click="chiumDetail"
         >
           <BoldText
@@ -92,7 +87,7 @@
         <div
           v-show="detailToggle"
           class="mt-4"
-          style="display: flex;"
+          style="display: flex; cursor: pointer;"
           @click="chiumDetail"
         >
           <BoldText
@@ -162,7 +157,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="신규개발(2021.12 ~ 2022.04), 고도화(2022.04 ~ 2022.10)"
+              text-value="2021. 12 ~ 2022. 10, 신규 개발 및 운영"
               font-size="20"
             />
           </v-col>
@@ -188,47 +183,36 @@
               font-size="20"
             />
             <NomalText
-              text-value="- UI 개발 및 데이터 연계"
+              text-value="- 웹뷰를 이용한 App 개발"
               font-size="19"
             />
             <NomalText
-              text-value="- 외부모듈 연계(카카오, 다날, 아임포트)"
+              text-value="- 상태관리 라이브러리인 Vuex를 이용하여 Props 복잡도 개선"
               font-size="19"
             />
             <NomalText
-              text-value="- REST API를 위한 axios 공동모듈 구현"
+              text-value="- Jwt 토큰을 이용한 인증 로직 구현"
               font-size="19"
             />
             <NomalText
-              text-value="- Axios Intercopteors를 이용한 Jwt 인증로직 구현"
+              text-value="- 아임포트 모듈을 이용하여 다날 본인인증 서비스 연동"
               font-size="19"
             />
             <NomalText
-              text-value="- 프로젝트 소스 형상관리(Git, Github)"
+              text-value="- 재사용 되는 UI가 있지만 컴포넌트화 되지 않았던 UI들을 컴포넌트로 변경"
               font-size="19"
             />
-          </v-col>
-        </v-row>
-
-        <v-row
-          class="mt-3"
-          no-gutters
-        >
-          <v-col
-            style="width: 100px;"
-            cols="auto"
-            class="pr-5"
-          >
-            <BoldText
-              text-value="개발 언어"
-              font-size="20"
+            <NomalText
+              text-value="- UI 라이브러리를 적절히 활용하여 빠른 UI 개발"
+              font-size="19"
             />
-          </v-col>
-          <v-col>
-            <BoldText
-              class="black--text"
-              text-value="JavaScript, Html, Css"
-              font-size="20"
+            <NomalText
+              text-value="- 운영 중에 발생하는 버그 및 고객 개선사항에 따른 수정"
+              font-size="19"
+            />
+            <NomalText
+              text-value="- 중복되는 Css Class를 줄이기 위해 재사용 가능한 Class 구축"
+              font-size="19"
             />
           </v-col>
         </v-row>
@@ -250,67 +234,8 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="Vue.js, Vuetify, Vuex, Git, GitHub"
+              text-value="Vue.js, Css, Vuetify, Vuex, Git, GitHub"
               font-size="20"
-            />
-          </v-col>
-        </v-row>
-
-        <v-row
-          class="mt-3"
-          no-gutters
-        >
-          <v-col
-            style="width: 100px;"
-            cols="auto"
-            class="pr-5"
-          >
-            <BoldText
-              text-value="고충 사항"
-              font-size="20"
-            />
-          </v-col>
-          <v-col>
-            <BoldText
-              class="black--text"
-              text-value="처음으로 실무에서 프로젝트를 진행해보니 초기 개발 및 운영에 어려움이 있었습니다."
-              font-size="20"
-            />
-            <BoldText
-              class="black--text"
-              text-value="1. 중복된 코드(style)"
-              font-size="20"
-            />
-            <NomalText
-              text-value="개발 초기에는 inline style 방식으로 화면을 구성하였으나 코드 양이 많아질수록 중복되는 스타일이 많아 어려움이 있었습니다. 이를 해결하기 위해 프로젝트에 scss를 도입하였고 자주 쓰이는 스타일을 변수 및 클래스로 지정하여 이를 해결하였습니다."
-              font-size="19"
-            />
-            <BoldText
-              class="black--text mt-1"
-              text-value="2. 중복된 코드(js)"
-              font-size="20"
-            />
-            <NomalText
-              text-value="여러 js 파일에서 같은 동작을 하는 함수들이 많아 소스 수정 시 여러 js 파일을 수정해야 하는 어려움이 있었습니다. 이를 해결하기 위해 2번 이상 사용하는 함수는 모듈로 작성하여 export처리 하였습니다."
-              font-size="19"
-            />
-            <BoldText
-              class="black--text mt-1"
-              text-value="3. 응집도"
-              font-size="20"
-            />
-            <NomalText
-              text-value="서비스 운영 중 소스를 수정해야 할 때 어떤 파일에서 수정을 해야 할지 찾아가며 시간을 소비하였습니다. 이 문제점을 해결하기 위해 서로 관련 있는 소스, 파일들을 모아서 관리하여 문제를 해결하였습니다."
-              font-size="19"
-            />
-            <BoldText
-              class="black--text mt-1"
-              text-value="4. 협업"
-              font-size="20"
-            />
-            <NomalText
-              text-value="프로젝트를 같이 수행하는 인원들이 모두 프로젝트를 해본 경험이 없었습니다. 작업에 대해 문서 작성을 하지도 않았고 구두로 작업을 진행하였으나 업무가 많을 경우 수정, 개선 사항을 잊는 경우도 종종 발생하여 회사에 notion을 도입하여 이 문제점을 해결하였습니다."
-              font-size="19"
             />
           </v-col>
         </v-row>
@@ -332,62 +257,8 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="Front-End 2명, Back-End 2명"
+              text-value="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)"
               font-size="20"
-            />
-          </v-col>
-        </v-row>
-
-        <v-row
-          class="mt-3"
-          no-gutters
-        >
-          <v-col
-            style="width: 100px;"
-            cols="auto"
-            class="pr-5"
-          >
-            <BoldText
-              style="text-align: end;"
-              text-value="참여율 "
-              font-size="20"
-            />
-          </v-col>
-          <v-col>
-            <BoldText
-              class="black--text"
-              text-value="front-end 기준 70%"
-              font-size="20"
-            />
-            <BoldText
-              class="black--text"
-              text-value="1. 계정 관련(로그인, 회원가입)"
-              font-size="20"
-            />
-            <NomalText
-              text-value="- 회원가입 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 로그인 구현"
-              font-size="19"
-            />
-            <BoldText
-              class="black--text"
-              text-value="2. 서비스 관련"
-              font-size="20"
-            />
-            <NomalText
-              text-value="- 개인 배출자 서비스 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 사업자 배출자 서비스 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 모든 회원유형 마이페이지 서비스 구현"
-              font-size="19"
             />
           </v-col>
         </v-row>
