@@ -65,7 +65,7 @@
           first-title="경력"
           second-title="주식회사 위드위(2022.11 ~ 재직중)"
           third-title="주식회사 느루(2021.09 ~ 2022.10)"
-          fourth-title="담당업무 : front-end개발"
+          fourth-title="담당업무 : Front-End개발"
         />
       </v-col>
       <v-col cols="auto">

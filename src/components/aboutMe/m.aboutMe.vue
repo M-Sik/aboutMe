@@ -205,7 +205,7 @@
           font-size="12"
         />
         <NomalText
-          text-value="담당업무: front-end 개발"
+          text-value="담당업무: Front-End 개발"
           font-size="12"
         />
       </v-col>
@@ -228,11 +228,11 @@ export default {
 
 <style>
 a:link {
-  color: black;
+  color: blue;
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: blue;
   text-decoration: none;
 }
 a:hover {

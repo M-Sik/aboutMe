@@ -179,7 +179,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="front-end(WebView 신규개발 & 운영)"
+              text-value="Front-End개발"
               font-size="20"
             />
             <NomalText

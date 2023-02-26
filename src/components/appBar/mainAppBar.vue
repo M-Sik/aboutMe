@@ -28,7 +28,7 @@
             class="pt-2"
           >
             <NomalText
-              text-value="front-end developer"
+              text-value="Front-End Developer"
               style="color: #727070"
               font-size="24"
             />
@@ -83,7 +83,7 @@
       <v-col cols="auto">
         <NomalText
           class="mt-1"
-          text-value="front-end developer"
+          text-value="Front-End Developer"
           style="color: #727070"
           font-size="14"
         />

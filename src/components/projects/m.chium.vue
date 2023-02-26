@@ -123,7 +123,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="front-end(WebView 신규개발 & 운영)"
+          text-value="Front-End"
           font-size="14"
         />
         <div style="font-size: 12px;">
