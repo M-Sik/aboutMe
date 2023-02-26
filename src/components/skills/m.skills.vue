@@ -58,25 +58,6 @@
             font-size="16"
           />
         </div>
-        <div>
-          <v-row
-            no-gutters
-            justify="center"
-          >
-            <v-col cols="auto">
-              <img
-                style="object-fit: contain; width: 14vw;"
-                src="@/assets/images/vuetifyImg.png"
-              >
-            </v-col>
-          </v-row>
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="VUETIFY"
-            font-size="16"
-          />
-        </div>
       </v-col>
       <v-col cols="auto">
         <div class="mb-10">
@@ -106,14 +87,14 @@
             <v-col cols="auto">
               <img
                 style="object-fit: contain; width: 14vw;"
-                src="@/assets/images/reactImg.png"
+                src="@/assets/images/vuetifyImg.png"
               >
             </v-col>
           </v-row>
           <BoldText
             style="text-align: center;"
             class="black--text"
-            text-value="REACT"
+            text-value="VUETIFY"
             font-size="16"
           />
         </div>
