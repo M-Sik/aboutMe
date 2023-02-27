@@ -134,7 +134,12 @@
           <a
             target="blank"
             href="https://sikk.tistory.com/117"
-          >👉 블로그 포스팅 보러가기 👈</a>
+          >👉 번들사이즈, Code Splitting 최적화 참고 블로그 포스팅 보러가기 👈</a>
+          <br>
+          <a
+            target="blank"
+            href="https://sikk.tistory.com/120"
+          >👉 Web Font 최적화 참고 블로그 포스팅 보러가기 👈</a>
           <br>
           - Jwt 토큰을 이용한 인증 로직 구현
           <br>

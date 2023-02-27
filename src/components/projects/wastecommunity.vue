@@ -187,13 +187,18 @@
               font-size="19"
             />
             <NomalText
-              text-value="- 번들 사이즈 최적화(802.28KB => 733.58KB), Code Splitting 등 최적화 작업 수행"
+              text-value="- 번들 사이즈 최적화(802.28KB => 733.58KB), Code Splitting, Web Font등 최적화 작업 수행"
               font-size="19"
             />
             <a
               target="blank"
               href="https://sikk.tistory.com/117"
-            >👉 블로그 포스팅 보러가기 👈</a>
+            >👉 번들사이즈, Code Splitting 최적화 참고 블로그 포스팅 보러가기 👈</a>
+            <br>
+            <a
+              target="blank"
+              href="https://sikk.tistory.com/120"
+            >👉 Web Font 최적화 참고 블로그 포스팅 보러가기 👈</a>
             <NomalText
               text-value="- Jwt 토큰을 이용한 인증 로직 구현"
               font-size="19"
