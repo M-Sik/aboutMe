@@ -18,19 +18,25 @@
           text-value="Waste Community - (주)위드위"
           font-size="24"
         />
-        <v-btn
+        <!-- <v-btn
           class="mt-2"
           style="color: blue;"
           href="/project-wasteCommunity.pdf"
           download
         >
           👉 프로젝트 상세내용 다운로드 👈
-        </v-btn>
+        </v-btn> -->
         <NomalText
           class="mt-2"
           text-value="Waste Community 서비스는 폐기물 관련된 정보를 고유하며 이야기를 나눌 수 있는 공간을 제공하는 서비스이며 반응형 웹으로 구현되어있습니다."
           font-size="19"
         />
+        <div class="mt-4">
+          <a
+            target="blank"
+            href="https://wastecommunity.com/"
+          >👉 프로젝트 웹으로 보러가기 👈</a>
+        </div>
         <!-- <v-row
           class="mt-4"
           no-gutters
@@ -157,7 +163,7 @@
           <v-col>
             <BoldText
               class="black--text"
-              text-value="2022. 11 ~ 신규 개발 및 운영"
+              text-value="2022. 11 ~ 신규 개발 및 운영대기"
               font-size="20"
             />
           </v-col>
@@ -183,11 +189,7 @@
               font-size="20"
             />
             <NomalText
-              text-value="- Waste Community 신규 개발 및 운영"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 번들 사이즈 최적화(802.28KB => 733.58KB), Code Splitting, Web Font등 최적화 작업 수행"
+              text-value="- 번들 사이즈 최적화(802.28KB ⇒ 733.58KB), Code Splitting, Web Font(4.7MB ⇒ 196KB) 등 최적화 작업 수행"
               font-size="19"
             />
             <a
@@ -225,10 +227,6 @@
             />
             <NomalText
               text-value="- 반응형 UI 구현"
-              font-size="19"
-            />
-            <NomalText
-              text-value="- 운영 중에 발생하는 버그 및 고객 개선사항에 따른 수정"
               font-size="19"
             />
             <NomalText

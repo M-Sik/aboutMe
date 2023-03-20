@@ -10,19 +10,25 @@
       text-value="Waste Community - (주)위드위"
       font-size="16"
     />
-    <v-btn
+    <!-- <v-btn
       class="mt-2"
       style="color: blue;"
       href="/project-wasteCommunity.pdf"
       download
     >
       👉 프로젝트 상세내용 다운로드 👈
-    </v-btn>
+    </v-btn> -->
     <NomalText
       class="mt-3"
       text-value="Waste Community 서비스는 폐기물 관련된 정보를 고유하며 이야기를 나눌 수 있는 공간을 제공하는 서비스이며 반응형 웹으로 구현되어있습니다."
       font-size="14"
     />
+    <div class="mt-3">
+      <a
+        target="blank"
+        href="https://wastecommunity.com/"
+      >👉 프로젝트 웹으로 보러가기 👈</a>
+    </div>
     <!-- <v-row
       class="mt-3"
       no-gutters
@@ -114,7 +120,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="2022. 11 ~ 신규 개발 및 운영"
+          text-value="2022. 11 ~ 신규 개발 및 운영대기"
           font-size="14"
         />
         <BoldText
@@ -127,9 +133,7 @@
           font-size="14"
         />
         <div style="font-size: 12px;">
-          - UI Waste Community 신규 개발 및 운영
-          <br>
-          - 번들 사이즈 최적화(802.28KB => 733.58KB), Code Splitting 등 최적화 작업 수행
+          - 번들 사이즈 최적화(802.28KB ⇒ 733.58KB), Code Splitting, Web Font(4.7MB ⇒ 196KB) 등 최적화 작업 수행
           <br>
           <a
             target="blank"
@@ -154,8 +158,6 @@
           - UI 라이브러리를 적절히 활용하여 빠른 UI 개발
           <br>
           - 반응형 UI 구현
-          <br>
-          - 운영 중에 발생하는 버그 및 고객 개선사항에 따른 수정
           <br>
           - 사내 Waste Community 서비스 관리를 위한 어드민 페이지 개발
           <br>

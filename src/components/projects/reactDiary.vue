@@ -26,17 +26,17 @@
         >
           👉 프로젝트 상세내용 다운로드 👈
         </v-btn>
-        <div class="mt-4">
-          <a
-            target="blank"
-            href="https://devsik-diary.netlify.app/"
-          >👉 홈페이지 보러가기 👈</a>
-        </div>
         <NomalText
           class="mt-2"
           text-value="My Diary는 나의 일상을 기록하는 서비스이며 반응형 웹으로 구현되어있습니다."
           font-size="19"
         />
+        <div class="mt-4">
+          <a
+            target="blank"
+            href="https://devsik-diary.netlify.app/"
+          >👉 프로젝트 웹으로 보러가기 👈</a>
+        </div>
         <div
           v-show="!detailToggle"
           class="mt-4"

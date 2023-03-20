@@ -7,29 +7,29 @@
   >
     <BoldText
       class="black--text"
-      text-value="Chium - (주)느루"
+      text-value="Wegnal - (주)위드위"
       font-size="16"
     />
     <!-- <v-btn
       class="mt-2"
       style="color: blue;"
-      href="/project-chium.pdf"
+      href="/project-wasteCommunity.pdf"
       download
     >
       👉 프로젝트 상세내용 다운로드 👈
     </v-btn> -->
     <NomalText
       class="mt-3"
-      text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
+      text-value="Wegnal은 폐기물 처리를 위해 폐기물 배출자와 수거∙처리업체를 매칭시켜주는 서비스입니다. 배출자가 폐기물 배출 신청 시 정해진 반경 내의 수거∙처리업체에게 수거를 요청합니다."
       font-size="14"
     />
     <div class="mt-3">
       <a
         target="blank"
-        href="https://chium.co.kr"
+        href="https://wegnal.com/"
       >👉 프로젝트 웹으로 보러가기 👈</a>
     </div>
-    <v-row
+    <!-- <v-row
       class="mt-3"
       no-gutters
     >
@@ -64,7 +64,7 @@
           class="d-none"
         />
       </v-col>
-    </v-row>
+    </v-row> -->
     <div
       v-show="!detailToggle"
       class="mt-4"
@@ -111,7 +111,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="chium"
+          text-value="Wegnal"
           font-size="14"
         />
         <BoldText
@@ -120,7 +120,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="2021. 12 ~ 2022. 10, 신규 개발 및 운영"
+          text-value="2023. 01 ~ 신규 개발 및 운영대기"
           font-size="14"
         />
         <BoldText
@@ -129,23 +129,33 @@
           font-size="16"
         />
         <BoldText
-          text-value="Front-End"
+          text-value="Front-End 개발"
           font-size="14"
         />
         <div style="font-size: 12px;">
-          - 상태관리 라이브러리인 Vuex를 이용하여 Props 복잡도 개선
+          - Vue.js Option API에서 Composition API로 리펙토링 진행
+          <br>
+          👉 기존에는 option API를 활용하여 작업하였으나 소스 코드가 많아질수록 연관돼있는 코드가 나누어져있어 로직을 추적하기 어려웠습니다. 이를 해결하기 위해 Composition API를 도입하였습니다.
+          <br>
+          - 번들 사이즈 최적화(1.51MB => 1.44MB), Code Splitting, Web Font(868KB ⇒ 169KB) 등 최적화 작업 수행
+          <br>
+          <a
+            target="blank"
+            href="https://sikk.tistory.com/117"
+          >👉 번들사이즈, Code Splitting 최적화 참고 블로그 포스팅 보러가기 👈</a>
+          <br>
+          <a
+            target="blank"
+            href="https://sikk.tistory.com/120"
+          >👉 Web Font 최적화 참고 블로그 포스팅 보러가기 👈</a>
           <br>
           - Jwt 토큰을 이용한 인증 로직 구현
           <br>
-          - 아임포트 모듈을 이용하여 다날 본인인증 서비스 연동
+          - 카카오맵 API를 이용하여 지도, 위치기반의 데이터를 다루어 지도로 화면에 표현
           <br>
-          - 재사용 되는 UI가 있지만 컴포넌트화 되지 않았던 UI들을 컴포넌트로 변경
+          - 디자이너와 협업하여 재사용 가능한 UI 설계
           <br>
-          - UI 라이브러리를 적절히 활용하여 빠른 UI 개발
-          <br>
-          - 운영 중에 발생하는 버그 및 고객 개선사항에 따른 수정
-          <br>
-          - 중복되는 Css Class를 줄이기 위해 재사용 가능한 Class 구축
+          - 사내 Wegnal 서비스 관리를 위한 어드민 페이지 개발
         </div>
         <BoldText
           class="mt-4"
@@ -153,7 +163,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="Vue.js, Css, Vuetify, Vuex, Git, GitHub"
+          text-value="Vue.js, TypeScript, Scss, Vuetify, Vuex, Git, GitHub"
           font-size="14"
         />
         <BoldText
@@ -162,7 +172,7 @@
           font-size="16"
         />
         <BoldText
-          text-value="Front-End 2명, Back-End 2명 (참여율 Front-End 기준 70%)"
+          text-value="Front-End 1명, Back-End 1명"
           font-size="14"
         />
       </div>
@@ -175,7 +185,6 @@ import BoldText from '@/components/text/textBold.vue'
 import NomalText from '@/components/text/text.vue'
 
 export default {
-  name: "MChium",
   components: {
     // NomalText,
     BoldText,

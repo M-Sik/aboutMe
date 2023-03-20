@@ -18,19 +18,25 @@
           text-value="Chium - (주)느루"
           font-size="24"
         />
-        <v-btn
+        <!-- <v-btn
           class="mt-2"
           style="color: blue;"
           href="/project-chium.pdf"
           download
         >
           👉 프로젝트 상세내용 다운로드 👈
-        </v-btn>
+        </v-btn> -->
         <NomalText
           class="mt-2"
           text-value="chium 서비스는 WebView으로 구현 되어 있으며, 폐기물 배출자와 수거업체를 연결해 주는 폐기물 안전처리 서비스 입니다. 배출자와 수거업체간의 입찰 과정을 통하여 폐기물을 처리하며 배출자는 가장 저렴한 가격에 폐기물을 배출할 수 있습니다."
           font-size="19"
         />
+        <div class="mt-4">
+          <a
+            target="blank"
+            href="https://chium.co.kr"
+          >👉 프로젝트 웹으로 보러가기 👈</a>
+        </div>
         <v-row
           class="mt-4"
           no-gutters
@@ -181,10 +187,6 @@
               class="black--text"
               text-value="Front-End개발"
               font-size="20"
-            />
-            <NomalText
-              text-value="- 웹뷰를 이용한 App 개발"
-              font-size="19"
             />
             <NomalText
               text-value="- 상태관리 라이브러리인 Vuex를 이용하여 Props 복잡도 개선"
