@@ -98,63 +98,52 @@ export default {
     },
   }),
   mounted() {
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
     document.addEventListener('scroll', this.scrollEvents);
-
-    this.aboutMeH = document.getElementById("aboutMeSection").getBoundingClientRect().top;
-    this.skillsH = document.getElementById("skillsSection").getBoundingClientRect().top;
-    this.projectsH = document.getElementById("projectsSection").getBoundingClientRect().top;
   },
   destroyed() {
     document.removeEventListener('scroll', this.scrollEvents)
   },
   methods: {
     scrollEvents() {
+      this.aboutMeH = document.getElementById("aboutMeSection").getBoundingClientRect().top;
+    this.skillsH = document.getElementById("skillsSection").getBoundingClientRect().top;
+    this.projectsH = document.getElementById("projectsSection").getBoundingClientRect().top;
+
       let scrollH = document.documentElement.scrollTop
       let contentH = this.$vuetify.breakpoint.height
 
-      if((scrollH + contentH) > this.aboutMeH) {
-        // about me 영역
-        if((scrollH + contentH) < this.skillsH) {
-          this.headerAboutMeToggle = true
-          this.headerSkillsToggle = false
-          this.headerProjectsToggle = false
-        }
-        // skills 영역
-        if((scrollH + contentH) > this.skillsH) {
-          if((scrollH + contentH) < this.projectsH){
-            // 상단으로 보내는 스크롤 버튼
-            this.scrollUpBtnToggle = true
-            // skills 태그 애니매이션 작동 id를 넣어서 click 이벤트 달면 될듯
-            this.headerAboutMeToggle = false
-            this.headerSkillsToggle = true
-            this.headerProjectsToggle = false
-          }
-        }
-        // projects 영역
-        if((scrollH + contentH) > this.projectsH) {
-          // 상단으로 보내는 스크롤 버튼
-          this.scrollUpBtnToggle = true
-          // skills 태그 애니매이션 작동 id를 넣어서 click 이벤트 달면 될듯
-          this.headerAboutMeToggle = false
-          this.headerSkillsToggle = false
-          this.headerProjectsToggle = true
-        }
-      }else{
+      console.log(scrollH, contentH, this.aboutMeH, this.skillsH, this.projectsH)
+      if(this.projectsH < 150) {
+        this.scrollUpBtnToggle = true
+        this.headerAboutMeToggle = false
+        this.headerSkillsToggle = false
+        this.headerProjectsToggle = true
+        return
+      }
+      if(this.skillsH < 150) {
+        this.scrollUpBtnToggle = true
+        this.headerAboutMeToggle = false
+        this.headerSkillsToggle = true
+        this.headerProjectsToggle = false
+        return
+      }
+      if(this.aboutMeH < 150) {
         this.scrollUpBtnToggle = false
         this.headerAboutMeToggle = true
         this.headerSkillsToggle = false
         this.headerProjectsToggle = false
+        return
       }
     },
     clickAboutMe() {
-      window.scrollTo({top: this.aboutMeH - 220, left: 0, behavior: 'smooth'})
+      document.getElementById("aboutMeSection").scrollIntoView({ block: "start", behavior:'smooth' });
     },
     clickSkills() {
-      window.scrollTo({top: this.skillsH - 220, left: 0, behavior: 'smooth'})
+      document.getElementById("skillsSection").scrollIntoView({ block: "start", behavior:'smooth' });
     },
     clickProjects() {
-      window.scrollTo({top: this.projectsH - 100, left: 0, behavior: 'smooth'})
+      document.getElementById("projectsSection").scrollIntoView({ block: "start", behavior:'smooth' });
     }
   }
 };
