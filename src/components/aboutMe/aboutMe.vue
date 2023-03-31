@@ -17,16 +17,14 @@
         <ItemForm
           class="mb-9"
           icon-name="mdi-post-outline"
-          first-title="블로그"
+          first-title="Blog"
           second-title="sikk.tistory.com"
         />
         <ItemForm
           class="mb-9"
-          icon-name="mdi-account-school-outline"
-          first-title="학력"
-          second-title="서원대학교 2021.02 졸업"
-          third-title="(정보통신공학)"
-          fourth-title="학점: 3.94/4.5"
+          icon-name="mdi-link-variant"
+          first-title="GitHub"
+          second-title="https://github.com/M-Sik"
         />
       </v-col>
       <v-col cols="auto">
@@ -63,6 +61,14 @@
           icon-name="mdi-card-account-details-outline"
           first-title="자격증"
           second-title="정보처리기사"
+        />
+        <ItemForm
+          class="mb-9"
+          icon-name="mdi-account-school-outline"
+          first-title="학력"
+          second-title="서원대학교 2021.02 졸업"
+          third-title="(정보통신공학)"
+          fourth-title="학점: 3.94/4.5"
         />
       </v-col>
     </v-row>

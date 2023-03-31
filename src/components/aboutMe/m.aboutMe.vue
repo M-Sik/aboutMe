@@ -84,11 +84,31 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <h4>블로그</h4>
+        <h4>Blog</h4>
         <a
           target="blank"
           href="https://sikk.tistory.com/"
         >sikk.tistory.com</a>
+      </v-col>
+    </v-row>
+    <v-row
+      class="mt-4"
+      no-gutters
+    >
+      <v-col
+        class="pr-2"
+        cols="auto"
+      >
+        <v-icon size="30">
+          mdi-link-variant
+        </v-icon>
+      </v-col>
+      <v-col cols="auto">
+        <h4>GitHub</h4>
+        <a
+          target="blank"
+          href="https://github.com/M-Sik"
+        >github.com/M-Sik</a>
       </v-col>
     </v-row>
     <v-row

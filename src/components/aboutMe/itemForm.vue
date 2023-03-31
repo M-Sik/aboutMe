@@ -17,10 +17,16 @@
         font-size="24"
       />
       <a
-        v-if="firstTitle === '블로그'"
+        v-if="firstTitle === 'Blog'"
         target="blank"
         style="font-size: 20px; color: #413F3F;"
         href="https://sikk.tistory.com/"
+      >{{ secondTitle }}</a>
+      <a
+        v-else-if="firstTitle === 'GitHub'"
+        target="blank"
+        style="font-size: 20px; color: #413F3F;"
+        href="https://github.com/M-Sik"
       >{{ secondTitle }}</a>
       <NomalText
         v-else
