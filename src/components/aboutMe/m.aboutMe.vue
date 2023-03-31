@@ -1,18 +1,8 @@
 <template>
   <v-card
-    style="
-      background: #FFFDFD;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      margin: 24px 16px;
-      padding: 20px 16px;
-    "
+    class="wrap-card"
   >
-    <BoldText
-      class="text-center"
-      text-value="ABOUT ME"
-      font-size="20"
-    />
+    <h2>ABOUT ME</h2>
     <v-row
       class="mt-5"
       no-gutters
@@ -26,14 +16,8 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="이름"
-          font-size="14"
-        />
-        <NomalText
-          text-value="김명식"
-          font-size="12"
-        />
+        <h4>이름</h4>
+        <p>김명식</p>
       </v-col>
     </v-row>
     <v-row
@@ -49,14 +33,8 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="연락처"
-          font-size="14"
-        />
-        <NomalText
-          text-value="010-5754-7220"
-          font-size="12"
-        />
+        <h4>연락처</h4>
+        <p>010-5754-7220</p>
       </v-col>
     </v-row>
     <v-row
@@ -72,14 +50,8 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="생년월일"
-          font-size="14"
-        />
-        <NomalText
-          text-value="97.01.13"
-          font-size="12"
-        />
+        <h4>생년월일</h4>
+        <p>97.01.13</p>
       </v-col>
     </v-row>
     <v-row
@@ -95,14 +67,8 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="자격증"
-          font-size="14"
-        />
-        <NomalText
-          text-value="정보처리기사"
-          font-size="12"
-        />
+        <h4>자격증</h4>
+        <p>정보처리기사</p>
       </v-col>
     </v-row>
     <v-row
@@ -118,13 +84,9 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="블로그"
-          font-size="14"
-        />
+        <h4>블로그</h4>
         <a
           target="blank"
-          style="font-size: 12px; color: #413F3F;"
           href="https://sikk.tistory.com/"
         >sikk.tistory.com</a>
       </v-col>
@@ -142,14 +104,8 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="이메일"
-          font-size="14"
-        />
-        <NomalText
-          text-value="rlaaudtlr233@gmail.com"
-          font-size="12"
-        />
+        <h4>이메일</h4>
+        <p>rlaaudtlr233@gmail.com</p>
       </v-col>
     </v-row>
     <v-row
@@ -165,18 +121,9 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="학력"
-          font-size="14"
-        />
-        <NomalText
-          text-value="서원대학교 정보통신공학과 졸업(2021.02)"
-          font-size="12"
-        />
-        <NomalText
-          text-value="학점: 3.94/4.5"
-          font-size="12"
-        />
+        <h4>학력</h4>
+        <p>서원대학교 정보통신공학과 졸업(2021.02)</p>
+        <p>학점: 3.94/4.5</p>
       </v-col>
     </v-row>
     <v-row
@@ -192,51 +139,40 @@
         </v-icon>
       </v-col>
       <v-col cols="auto">
-        <BoldText
-          text-value="경력"
-          font-size="14"
-        />
-        <NomalText
-          text-value="주식회사 위드위(2022.11 ~ 재직중)"
-          font-size="12"
-        />
-        <NomalText
-          text-value="주식회사 느루(2021.09 ~ 2022.10)"
-          font-size="12"
-        />
-        <NomalText
-          text-value="담당업무: Front-End 개발"
-          font-size="12"
-        />
+        <h4>경력</h4>
+        <p>주식회사 위드위(2022.11 ~ 재직중)</p>
+        <p>주식회사 느루(2021.09 ~ 2022.10)</p>
+        <p>담당업무: Front-End 개발</p>
       </v-col>
     </v-row>
   </v-card>
 </template>
 
 <script>
-import BoldText from '@/components/text/textBold.vue'
-import NomalText from '@/components/text/text.vue'
-
 export default {
   name: "MAboutMe",
-  components: {
-    BoldText,
-    NomalText,
-  }
 }
 </script>
 
-<style>
-a:link {
-  color: blue;
-  text-decoration: none;
-}
-a:visited {
-  color: blue;
-  text-decoration: none;
-}
-a:hover {
-  color: green;
-  text-decoration: none;
+<style scoped lang="scss">
+.wrap-card {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 24px 16px;
+  padding: 20px 16px;
+  h2 {
+    font-size: 4.0rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 2.8rem;
+    color: $grey;
+  }
+  p, a {
+    font-size: 2.4rem;
+    color: $grey;
+  }
+
 }
 </style>

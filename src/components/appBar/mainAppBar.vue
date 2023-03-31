@@ -88,6 +88,7 @@ export default {
 <style scoped lang="scss">
 h2 {
   font-size: 3.2rem;
+  color: $grey;
   span {
     font-size: 2.4rem;
     color: $grey-light-1;

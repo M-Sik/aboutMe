@@ -1,25 +1,8 @@
 <template>
   <v-card
-    style="
-      background: #FFFDFD;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      margin: 10vh 10vw;
-      padding: 50px 60px;
-    "
+    class="wrap-card"
   >
-    <v-row
-      justify="center"
-      style="padding-bottom: 60px;"
-      no-gutters
-    >
-      <v-col cols="auto">
-        <BoldText
-          text-value="ABOUT ME"
-          font-size="32"
-        />
-      </v-col>
-    </v-row>
+    <h2>ABOUT ME</h2>
     <v-row
       justify="space-between"
       no-gutters
@@ -87,19 +70,27 @@
 </template>
 
 <script>
-import BoldText from '@/components/text/textBold.vue'
 import ItemForm from '@/components/aboutMe/itemForm.vue'
 
 export default {
   name: 'AboutMe',
   components: {
-    // NomalText,
-    BoldText,
     ItemForm
   },
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+.wrap-card {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 10vh 10vw;
+  padding: 50px 60px;
+  h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
 </style>
