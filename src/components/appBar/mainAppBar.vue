@@ -28,7 +28,7 @@
         </nav>
         <nav
           :class="skillsToggle ? 'black--text' : ''"
-          @click="clickAboutMe"
+          @click="clickSkills"
         >
           Skills
         </nav>
@@ -51,26 +51,6 @@
     fixed
   >
     <h2>dev_sik <span>Front-End Developer</span></h2>
-    <!-- <v-row
-      align="center"
-      no-gutters
-    >
-      <v-col cols="auto">
-        <BoldText
-          class="pr-1"
-          text-value="dev_sik"
-          font-size="16"
-        />
-      </v-col>
-      <v-col cols="auto">
-        <NomalText
-          class="mt-1"
-          text-value="Front-End Developer"
-          style="color: #727070"
-          font-size="14"
-        />
-      </v-col>
-    </v-row> -->
   </v-app-bar>
 </template>
 
@@ -117,5 +97,6 @@ nav {
   padding-right: 52px;
   font-size: 2.4rem;
   color: $grey-light-1;
+  cursor: pointer;
 }
 </style>
