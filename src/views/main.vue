@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div class="bg-color">
     <MainAppBar
       :about-me-toggle="headerAboutMeToggle"
       :skills-toggle="headerSkillsToggle"
@@ -8,55 +8,52 @@
       @click-skills="clickSkills"
       @click-projects="clickProjects"
     />
-    <v-main
-      class="meBackground pa-0"
+
+    <v-row
+      :style="`padding-top: 64px;`"
+      no-gutters
+      justify="center"
     >
-      <v-row
-        :style="`padding-top: 64px;`"
-        no-gutters
-        justify="center"
-      >
-        <v-col>
-          <Profile
-            v-if="!$vuetify.breakpoint.mobile"
-            v-animate-css="mainFadeIn"
-          />
-          <MProfile
-            v-else
-            v-animate-css="mainFadeIn"
-          />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
-          <AboutMe
-            v-if="!$vuetify.breakpoint.mobile"
-            id="aboutMeSection"
-          />
-          <MAboutMe
-            v-else
-            id="aboutMeSection"
-          />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
-          <Skills
-            v-if="!$vuetify.breakpoint.mobile"
-            id="skillsSection"
-          />
-          <MSkills
-            v-else
-            id="skillsSection"
-          />
-          <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
-          <Projects
-            v-if="!$vuetify.breakpoint.mobile"
-            id="projectsSection"
-          />
-          <MProjects
-            v-else
-            id="projectsSection"
-          />
-        </v-col>
-      </v-row>
-      <ScrollUpBtn v-show="scrollUpBtnToggle" />
-    </v-main>
-  </v-app>
+      <v-col>
+        <Profile
+          v-if="!$vuetify.breakpoint.mobile"
+          v-animate-css="mainFadeIn"
+        />
+        <MProfile
+          v-else
+          v-animate-css="mainFadeIn"
+        />
+        <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
+        <AboutMe
+          v-if="!$vuetify.breakpoint.mobile"
+          id="aboutMeSection"
+        />
+        <MAboutMe
+          v-else
+          id="aboutMeSection"
+        />
+        <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
+        <Skills
+          v-if="!$vuetify.breakpoint.mobile"
+          id="skillsSection"
+        />
+        <MSkills
+          v-else
+          id="skillsSection"
+        />
+        <v-divider style="border: solid 1px #6D6A6A; margin: 0px 8vw;" />
+        <Projects
+          v-if="!$vuetify.breakpoint.mobile"
+          id="projectsSection"
+        />
+        <MProjects
+          v-else
+          id="projectsSection"
+        />
+      </v-col>
+    </v-row>
+    <ScrollUpBtn v-show="scrollUpBtnToggle" />
+  </div>
 </template>
 
 <script>

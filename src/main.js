@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import VAnimateCss from 'v-animate-css'
+import "@/assets/scss/commons.scss";
 
 Vue.config.productionTip = false
 Vue.use(VAnimateCss)

@@ -1,8 +1,9 @@
 <template>
+  <!-- 웹 -->
   <v-app-bar
     v-if="!$vuetify.breakpoint.mobile"
     elevation="0"
-    class="meBackground px-6"
+    class="bg-color px-6"
     fixed
   >
     <v-row
@@ -13,63 +14,44 @@
       <v-col
         cols="auto"
       >
-        <v-row no-gutters>
-          <v-col
-            cols="auto"
-            class="pr-3"
-          >
-            <BoldText
-              text-value="dev_sik"
-              font-size="32"
-            />
-          </v-col>
-          <v-col
-            cols="auto"
-            class="pt-2"
-          >
-            <NomalText
-              text-value="Front-End Developer"
-              style="color: #727070"
-              font-size="24"
-            />
-          </v-col>
-        </v-row>
+        <h2>dev_sik <span>Front-End Developer</span></h2>
       </v-col>
       <v-col
         style="display: flex;"
         cols="auto"
       >
-        <NomalText
-          :class="{greyColorText: aboutMeToggle===false, blackColorText: aboutMeToggle===true}"
-          text-value="AboutMe"
-          font-size="24"
-          @click.native="clickAboutMe"
-        />
-        <NomalText
-          :class="{greyColorText: skillsToggle===false, blackColorText: skillsToggle===true}"
-          text-value="Skills"
-          font-size="24"
-          style="color: #727070"
-          @click.native="clickSkills"
-        />
-        <NomalText
-          text-value="Projects"
-          font-size="24"
-          :class="{greyColorText: projectsToggle===false, blackColorText: projectsToggle===true}"
-          @click.native="clickProjects"
-        />
+        <nav
+          :class="aboutMeToggle ? 'black--text' : ''"
+          @click="clickAboutMe"
+        >
+          AboutMe
+        </nav>
+        <nav
+          :class="skillsToggle ? 'black--text' : ''"
+          @click="clickAboutMe"
+        >
+          Skills
+        </nav>
+        <nav
+          :class="projectsToggle ? 'black--text' : ''"
+          @click="clickProjects"
+        >
+          Projects
+        </nav>
       </v-col>
     </v-row>
   </v-app-bar>
+  <!--  -->
   <!-- 테블릿, 모바일일때 -->
   <v-app-bar
     v-else
     style="width: 100vw;"
     elevation="0"
-    class="meBackground pl-2"
+    class="bg-color pl-2"
     fixed
   >
-    <v-row
+    <h2>dev_sik <span>Front-End Developer</span></h2>
+    <!-- <v-row
       align="center"
       no-gutters
     >
@@ -88,19 +70,13 @@
           font-size="14"
         />
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-app-bar>
 </template>
 
 <script>
-import NomalText from '@/components/text/text.vue'
-import BoldText from '@/components/text/textBold.vue'
 export default {
   name: "MainAppBar",
-  components: {
-    NomalText,
-    BoldText
-  },
   props: {
     aboutMeToggle: {
       type: Boolean,
@@ -129,13 +105,17 @@ export default {
 };
 </script>
 
-<style scoped>
-.greyColorText {
-  color: #727070 !important;
-  padding-right: 52px !important;
+<style scoped lang="scss">
+h2 {
+  font-size: 3.2rem;
+  span {
+    font-size: 2.4rem;
+    color: $grey-light-1;
+  }
 }
-.blackColorText {
-  color: black !important;
-  padding-right: 52px !important;
+nav {
+  padding-right: 52px;
+  font-size: 2.4rem;
+  color: $grey-light-1;
 }
 </style>

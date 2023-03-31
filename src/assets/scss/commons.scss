@@ -4,12 +4,26 @@
     font-weight: normal;
     font-style: normal;
 }
-
-.meBackground{
-    background: #F2F2F6 !important;
+@media (max-width: 959px) {
+    html {
+        font-size: 5px;
+    }
+}
+@media (min-width: 960px) {
+    html {
+        font-size: 10px;
+    }
 }
 
 
 .v-application {
     font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.bg-color{
+    background: $grey-light-2 !important;
+}
+
+.d-flex {
+    display: flex;
 }
