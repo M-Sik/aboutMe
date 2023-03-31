@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="wrap-wegnal-card"
+    class="wrap-project-card"
   >
     <v-row
       justify="space-between"
@@ -67,7 +67,7 @@
         <div
           v-show="!detailToggle"
           class="wrap-detail-btn"
-          @click="chiumDetail"
+          @click="wegnalDetail"
         >
           <strong>자세히보기</strong>
           <v-icon size="30">
@@ -77,7 +77,7 @@
         <div
           v-show="detailToggle"
           class="wrap-detail-btn"
-          @click="chiumDetail"
+          @click="wegnalDetail"
         >
           <strong>자세히보기</strong>
           <v-icon size="30">
@@ -206,7 +206,7 @@ export default {
     detailToggle: false,
   }),
   methods: {
-    chiumDetail() {
+    wegnalDetail() {
       this.detailToggle = !this.detailToggle
     },
     googlePlayBtn() {
@@ -220,7 +220,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.wrap-wegnal-card {
+.wrap-project-card {
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
