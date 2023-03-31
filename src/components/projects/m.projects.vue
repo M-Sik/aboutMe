@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import MChium from '@/components/projects/m.chium.vue'
-import MWasteCommunity from '@/components/projects/m.wastecommunity.vue'
-import MReactDiary from '@/components/projects/m.reactDiary.vue'
-import MWegnal from '@/components/projects/m.wegnal.vue'
+import MChium from '@/components/projects/chium/m.chium.vue'
+import MWasteCommunity from '@/components/projects/wasteCommunity/m.wastecommunity.vue'
+import MReactDiary from '@/components/projects/myDiary/m.reactDiary.vue'
+import MWegnal from '@/components/projects/wegnal/m.wegnal.vue'
 
 export default {
   name: "MProjects",
