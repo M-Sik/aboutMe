@@ -2,7 +2,7 @@
   <v-card
     class="wrap-card"
   >
-    <h2>ABOUT ME1</h2>
+    <h2>ABOUT ME</h2>
     <v-row
       class="mt-5"
       no-gutters
