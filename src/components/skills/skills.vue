@@ -1,26 +1,8 @@
 <template>
   <v-card
-    style="
-      background: #FCAF1B;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      margin: 10vh 10vw;
-      padding: 50px 300px;
-    "
+    class="wrap-card"
   >
-    <v-row
-      justify="center"
-      style="padding-bottom: 60px;"
-      no-gutters
-    >
-      <v-col cols="auto">
-        <BoldText
-          class="black--text"
-          text-value="Skills"
-          font-size="32"
-        />
-      </v-col>
-    </v-row>
+    <h2>Skills</h2>
     <v-row
       justify="space-between"
       no-gutters
@@ -28,91 +10,55 @@
       <v-col cols="auto">
         <div class="mb-10">
           <img
-            style="object-fit: contain;"
             width="110"
             height="120"
             src="@/assets/images/htmlImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="HTML"
-            font-size="24"
-          />
+          <p>HTML</p>
         </div>
         <div class="mb-10">
           <img
             height="120"
             width="120"
-            style="object-fit: contain;"
             src="@/assets/images/vueImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="VUE"
-            font-size="24"
-          />
+          <p>VUE</p>
         </div>
       </v-col>
       <v-col cols="auto">
         <div class="mb-10">
           <img
-            style="object-fit: contain;"
             width="110"
             height="120"
             src="@/assets/images/jsImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="JS"
-            font-size="24"
-          />
+          <p>JS</p>
         </div>
         <div>
           <img
-            style="object-fit: contain;"
             width="110"
             height="120"
             src="@/assets/images/vuetifyImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="VUETIFY"
-            font-size="24"
-          />
+          <p>VUETIFY</p>
         </div>
       </v-col>
       <v-col cols="auto">
         <div class="mb-10">
           <img
-            style="object-fit: contain;"
             width="110"
             height="120"
             src="@/assets/images/cssImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="CSS"
-            font-size="24"
-          />
+          <p>CSS</p>
         </div>
         <div>
           <img
             height="120"
             width="120"
-            style="object-fit: contain;"
             src="@/assets/images/tsImg.png"
           >
-          <BoldText
-            style="text-align: center;"
-            class="black--text"
-            text-value="TS"
-            font-size="24"
-          />
+          <p>TS</p>
         </div>
       </v-col>
     </v-row>
@@ -120,17 +66,27 @@
 </template>
 
 <script>
-import BoldText from '@/components/text/textBold.vue'
-
 export default {
   name: 'Skills',
-  components: {
-    // NomalText,
-    BoldText,
-  },
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+.wrap-card {
+  background: $skills-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 10vh 10vw;
+  padding: 50px 300px;
+  h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  p {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+  }
+}
 </style>
